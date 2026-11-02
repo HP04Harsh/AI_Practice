@@ -14,5 +14,5 @@ class Secret:
 
 
 obj = Secret(5532224)
-obj.set_secret = 12345678  # Modifying the private attribute using the
+obj.set_secret = 12345678  # Modifying the private attribute using the public method
 print(obj.get_secret)  # Accessing the private attribute using the public method

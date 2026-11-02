@@ -1,4 +1,8 @@
 def vat(price,vat_rate):
+    """
+      calculate the price with VAT included
+
+    """
     return price * (100 + vat_rate)/100
 
 order_price = [100, 200, 300]

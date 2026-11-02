@@ -31,5 +31,5 @@ def chai():
         print(f"You order {order}")
 stall = chai()
 next(stall)
-stall.send("Lemon Tea")
+stall.send("Green Tea")
     
