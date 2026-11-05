@@ -24,6 +24,7 @@ The [`python/`](python/) directory contains standalone examples covering:
 - Conditional temperature and device-state checks: [`themostat-alert.py`](python/themostat-alert.py)
 - `match`/`case` selection for train seats: [`train-info.py`](python/train-info.py)
 - Coupon discounts: [`user-discount.py`](python/user-discount.py)
+- Banking inheritance practice: [`banking_inheritance.py`](python/banking_inheritance.py) and [`checking_account_inheritance.py`](python/checking_account_inheritance.py)
 
 Run an exercise with Python 3:
 
