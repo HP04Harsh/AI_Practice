@@ -1,15 +1,16 @@
 # Applied AI Engineer Study
 
 Hands-on exercises and small projects documenting my journey toward becoming
-an **Applied AI Engineer**. This repository currently focuses on Python
-fundamentals and Bash scripting, with room to grow into automation, machine
-learning, generative AI, and deployment.
+an **Applied AI Engineer**. This repository includes Python fundamentals,
+Bash scripting, and LangGraph examples, with room to grow into automation,
+machine learning, generative AI, and deployment.
 
 ## Repository structure
 
 ```text
 .
 ├── bash/       # Linux command-line and system-administration exercises
+├── LangGraph/  # LangGraph examples using Groq
 └── python/     # Python fundamentals and small programming exercises
 ```
 
@@ -34,6 +35,41 @@ python python/check_vat.py
 
 `train-info.py` uses structural pattern matching and requires Python 3.10 or
 newer. Some exercises prompt for input; follow the prompts in the terminal.
+
+## LangGraph examples
+
+The [`LangGraph/`](LangGraph/) directory contains:
+
+- [`chat.py`](LangGraph/chat.py): a simple graph with chatbot and weather nodes.
+- [`ai_llm.py`](LangGraph/ai_llm.py): a LangGraph workflow that calls a Groq chat model.
+
+### Setup and run
+
+From the repository root, create and activate a virtual environment, then
+install the project dependencies:
+
+```powershell
+cd LangGraph
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+```
+
+Create a `.env` file in `LangGraph/` and add your Groq API key:
+
+```env
+GROQ_API_KEY=your-groq-api-key
+```
+
+Run either example from the `LangGraph/` directory:
+
+```powershell
+python chat.py
+python ai_llm.py
+```
+
+`ai_llm.py` sends a request to Groq and requires a valid API key. Keep the key
+private; `.env` and `.venv/` are excluded from Git.
 
 ## Bash exercises
 
